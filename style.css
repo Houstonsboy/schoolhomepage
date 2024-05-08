@@ -1,0 +1,144 @@
+body{
+    background-color: #fff;
+    
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+
+#FirstPage{
+    border-bottom: 1px solid red;
+    margin-top: 0%;
+}
+#krustykrabs{
+    opacity: 0.7;
+}
+
+#TitleSection{
+    position:absolute;
+    top:50%;
+    left:20%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #f0f0f0; /* Adjust background color as needed */
+    padding: 10px 20px;
+  
+}
+
+#Logo img{
+    height: 60px; /* Adjust height as needed */
+    width: auto; /* Let the width adjust automatically */
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline;
+    margin-left: 20px; /* Adjust spacing between menu items as needed */
+}
+
+#menu ul li:first-child {
+    margin-left: 0; /* Remove margin for the first menu item */
+}
+#menu ul li a {
+    text-decoration: none; /* Remove default link styling */
+    color: inherit; /* Inherit text color */
+    position: relative; /* Position relative for pseudo-element */
+}
+#menu ul li a:hover::after {
+    content: ''; /* Add pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjust the distance of the line from the text */
+    width: 100%;
+    height: 2px;
+    background-color: red; /* Red line color */
+}
+
+img {
+    border: none;
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+}
+
+.Split-screen {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); /* Make columns occupy equal space */
+    gap: 20px; /* Add gap between columns */
+    padding: 90px; /* Add padding */
+}
+
+.Split-screen section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-right: 40px;
+    padding-bottom:0;
+}
+.Split-screen section img {
+    max-width: 100px; /* Set maximum width for the images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+section img {
+    max-width: 100%; /* Ensure image occupies full width */
+    height: 100%; /* Ensure image occupies full height of the top section */
+    border-radius: 10px;
+}
+
+#image {
+    flex: 1; /* Occupy half of the horizontal space */
+    display: flex;
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Horizontally center the image */
+}
+.squidward {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align content horizontally center */
+    gap: 20px; /* Adjust gap between elements */
+    padding-left: 50px;
+}
+
+.squidward img{
+    border-radius: 50%;
+    width: 80px; /* Adjust width as needed */
+    height: 80px; 
+}
+
+#seereviews {
+    height:150px;
+    width:150px;
+    background-color: transparent; /* Make background transparent */
+    border: none; /* Remove border */
+    border-radius:10px;
+    cursor: pointer; /* Show pointer cursor */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for transform and box-shadow */
+}
+
+#seereviews:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+}
+#customerpart img{
+    border-radius: 50%;
+    width: 60px; /* Adjust width as needed */
+    height: 60px; 
+}
+footer {
+    background-color: rgba(255, 255, 0, 0.8); /* Adjust background color and opacity */
+}
